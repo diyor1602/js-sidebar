@@ -1,0 +1,19 @@
+{
+  "name": "js-imtihon",
+  "version": "1.0.0",
+  "description": "js imtihon",
+  "main": "assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diyor1602/js-sidebar.git"
+  },
+  "author": "Diyorbek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diyor1602/js-sidebar/issues"
+  },
+  "homepage": "https://github.com/diyor1602/js-sidebar#readme"
+}
