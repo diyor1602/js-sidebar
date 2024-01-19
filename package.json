@@ -1,19 +1,21 @@
 {
-  "name": "js-imtihon",
-  "version": "1.0.0",
-  "description": "js imtihon",
+  "name": "vite-project",
+  "private": true,
+  "description": "javascript todo app",
   "main": "assets/js/index.js",
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/diyor1602/js-sidebar.git"
   },
   "author": "Diyorbek",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/diyor1602/js-sidebar/issues"
-  },
-  "homepage": "https://github.com/diyor1602/js-sidebar#readme"
+  "devDependencies": {
+    "vite": "^5.0.8"
+  }
 }
