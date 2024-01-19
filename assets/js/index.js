@@ -5,6 +5,9 @@ window.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   const passwordInput = document.getElementById("passwordInput");
   const emailInput = document.getElementById("emailInput");
+  const rangeInput = document.getElementById("rangeInput");
+  const rangeText = document.querySelector(".rangeText");
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     const email = emailInput.value;
@@ -29,6 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
   openSidebarBtn.addEventListener("click", toggleSidebar);
   closeBtn.addEventListener("click", toggleSidebar);
   passwordToggle.addEventListener("click", togglePasswordVisibility);
+  rangeInput.addEventListener("input", changeFontSize);
 
   function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("active");
@@ -42,5 +46,10 @@ window.addEventListener("DOMContentLoaded", () => {
       passwordInput.type = "password";
       passwordToggle.innerHTML = '<i class="fa-solid fa-eye"></i>';
     }
+  }
+
+  function changeFontSize() {
+    const fontSize = `${parseInt(rangeInput.value)}px`;
+    rangeText.style.fontSize = fontSize;
   }
 });
